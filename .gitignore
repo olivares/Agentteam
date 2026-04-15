@@ -1,4 +1,5 @@
 __pycache__/
 *.pyc
 .env
-agents_config.json
+solicitudes.db
+flask_session/
