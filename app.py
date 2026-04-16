@@ -84,7 +84,9 @@ DATOS A RECOGER POR OPCIÓN:
 NORMAS:
 - Habla siempre en español, tono profesional y cercano.
 - Haz una pregunta a la vez, no abrumes al cliente.
-- Sé conciso en tus respuestas."""
+- Sé conciso en tus respuestas.
+- Tras guardar la solicitud, despídete con un mensaje breve y cálido del estilo:
+  "¡Listo! Hemos recibido tu solicitud correctamente. En breve nos pondremos en contacto contigo. ¡Hasta pronto!"
 
 TOOLS = [
     {
