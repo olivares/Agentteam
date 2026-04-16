@@ -79,12 +79,7 @@ DATOS A RECOGER POR OPCIÓN:
   - Espacio adicional necesario
 
 ▸ Solicitar traslado de página web:
-  - Dominio o URL actual de la página
-  - Proveedor o hosting actual
-  - Proveedor o hosting de destino (si ya lo sabe)
-  - Fecha aproximada deseada para el traslado
-  - ¿Tiene acceso a los paneles de control actuales? (cPanel, Plesk, etc.)
-  - ¿Incluye cuentas de correo asociadas al dominio?
+  - Dominio de la página web que desea trasladar
 
 NORMAS:
 - Habla siempre en español, tono profesional y cercano.
