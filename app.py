@@ -35,6 +35,7 @@ TIPO_LABELS = {
     "facturas": "Solicitud de facturas",
     "asistencia_tecnica": "Asistencia técnica",
     "ampliar_espacio": "Ampliación de espacio",
+    "traslado_web": "Traslado de página web",
 }
 
 SYSTEM_PROMPT = """Eres el asistente virtual de soporte de MrBogart. \
@@ -47,6 +48,7 @@ FLUJO OBLIGATORIO:
    2. Solicitar facturas
    3. Asistencia técnica
    4. Ampliar espacio de correo o alojamiento
+   5. Solicitar traslado de página web
 3. Según la opción elegida, haz preguntas una a una para recoger la información necesaria.
 4. Al finalizar, muestra un resumen claro y pide confirmación al cliente.
 5. Cuando el cliente confirme, llama a guardar_solicitud.
@@ -76,6 +78,14 @@ DATOS A RECOGER POR OPCIÓN:
   - Espacio actual aproximado
   - Espacio adicional necesario
 
+▸ Solicitar traslado de página web:
+  - Dominio o URL actual de la página
+  - Proveedor o hosting actual
+  - Proveedor o hosting de destino (si ya lo sabe)
+  - Fecha aproximada deseada para el traslado
+  - ¿Tiene acceso a los paneles de control actuales? (cPanel, Plesk, etc.)
+  - ¿Incluye cuentas de correo asociadas al dominio?
+
 NORMAS:
 - Habla siempre en español, tono profesional y cercano.
 - Haz una pregunta a la vez, no abrumes al cliente.
@@ -102,7 +112,7 @@ TOOLS = [
                 },
                 "tipo": {
                     "type": "string",
-                    "enum": ["accesos", "facturas", "asistencia_tecnica", "ampliar_espacio"],
+                    "enum": ["accesos", "facturas", "asistencia_tecnica", "ampliar_espacio", "traslado_web"],
                     "description": "Tipo de solicitud",
                 },
                 "detalles": {
